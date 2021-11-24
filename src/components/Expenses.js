@@ -16,9 +16,18 @@ function Expenses(props) {
   //   return <div className="expenses">{list}</div>;
   return (
     <Card className="expenses">
-      {props.items.map((item) => (
-        <ExpenseItem title={item.title} amount={item.amount} date={item.date} />
-      ))}
+      {props.items.map((item) => {
+        if (item.activo) {
+          return (
+            <ExpenseItem
+              title={item.title}
+              amount={item.amount}
+              date={item.date}
+            />
+          );
+        }
+        return null;
+      })}
     </Card>
   );
 }
