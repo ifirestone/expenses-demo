@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../layouts/Card";
 import "./ExpenseDate.css";
 
 const ExpenseDate = (props) => {
