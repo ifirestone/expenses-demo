@@ -1,5 +1,5 @@
 import Expenses from "./components/expenses/Expenses";
-import NewExpense from "./components/NewExpense/NewExpense";
+import NewExpense from "./components/newExpense/NewExpense";
 import { useState } from "react";
 
 const DUMMY_EXPENSES = [
@@ -31,7 +31,7 @@ const DUMMY_EXPENSES = [
   {
     id: "e6",
     title: "Wife Birthday Party",
-    amount: 734.56,
+    amount: 634.56,
     date: new Date(2021, 7, 13),
   },
   {
