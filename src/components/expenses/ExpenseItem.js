@@ -6,8 +6,8 @@ import { useState } from "react";
 const ExpenseItem = (props) => {
   useState();
   const [title, setTitle] = useState(props.title);
-  const [date, setDate] = useState(props.date);
-  const [amount, setAmoun] = useState(props.amount);
+  let date = props.date;
+  let amount = props.amount;
   const changeTitle = () => {
     setTitle("Updated!!");
   };
